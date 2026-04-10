@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <img id="logo" src="E:\projectshtml\e-com\Luxury_Modern_Swiss_Watch_Clock_Logo__1_-removebg-preview.png" alt="Logo" >
+        <nav>
+            <ul>
+                <li><a href="file:///E:/projectshtml/e-com/index.html"><i class="fas fa-house-chimney"></i> Home</a></li>
+                <li><a href="E:\projectshtml\anizone\resource\about.html"><i class="fas fa-microscope"></i> About</a></li>
+                <li><a href="E:\projectshtml\anizone\resource\feedback.html"><i class="fas fa-comments"></i> Feedback</a></li>
+                <li><a href="E:\projectshtml\anizone\resource\shorts.html"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li>
+                <li> <button onclick="openLoginForm()" id="seb"><i class="fa-solid fa-user"></i></button></li>
+            </ul>
+        </nav>
+    <!-- js code -->
+      <script>
+window.addEventListener('scroll', function() {
+    const navitems = document.querySelector('nav ul');
+if (window.scrollY > 50) {
+   navitems.classList.add('scrolled');
+
+} else {
+    navitems.classList.remove('scrolled');
+}});
+</script>
+    <!-- finsh -->
+<h1>Where Luxury Meets Legacy</h1>
+<!-- vedio of intro -->
+<div id="info">    
+ <video id="info" controls autoplay loop muted >
+ <source src="E:\projectshtml\e-com\Cinematic Watch Product Video Commercial Example _ Rolex Timex Omega Samsung Apple Jewelry Amazon Ad.mp4" type="video/mp4">
+</video>
+<script>document.addEventListener('DOMContentLoaded', (event) => {
+    const video = document.getElementById('info');
+    video.play();
+});
+</script>
+   <h2>Where Luxury Meets Legacy</h2>  
+<div class="search-engin">
+    <input type="text" placeholder="search Brands">
+    <button id="search-sbt" type="button">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+    </button>
+</div>
+<script>
+function handleSearch() {
+    const searchTerm = document.querySelector('.search-engin input').value.toLowerCase();
+    
+    if (!searchTerm) {
+        alert('Please enter a search term');
+        return;
+    }
+    
+    // Get all brand elements
+    const brandElements = document.querySelectorAll('#brands div h3');
+    let found = false;
+    
+    // Search through brands
+    brandElements.forEach(brand => {
+        const brandName = brand.textContent.toLowerCase();
+        const brandDiv = brand.closest('div');
+        
+        if (brandName.includes(searchTerm)) {
+            brandDiv.style.backgroundColor = '#ffeb3b'; // Highlight
+            brandDiv.scrollIntoView({ behavior: 'smooth' });
+            found = true;
+        } else {
+            brandDiv.style.backgroundColor = ''; // Remove highlight
+        }
+    });
+    
+    if (!found) {
+        alert('No brands found matching: ' + searchTerm);
+    }
+}
+
+// Add event listener to search button
+document.addEventListener('DOMContentLoaded', function() {
+    const searchButton = document.querySelector('#search-sbt');
+    const searchInput = document.querySelector('.search-engin input');
+    
+    searchButton.addEventListener('click', handleSearch);
+    
+    // Also search when pressing Enter
+    searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            handleSearch();
+        }
+    });
+});
+</script>
+<!-- vedio for intro -->
+        <div id="brands">
+            <div id="s01">
+                <a href="E:\projectshtml\e-com\rolex.html"><h3>Rolex</h3></a>
+            </div>
+            <div id="s02">
+                <a href="E:\projectshtml\e-com\Breitling.html"><h3>Breitling</h3></a>
+            </div>
+            <div id="s03">
+                <a href="E:\projectshtml\e-com\OMEGA.html"><h3>OMEGA</h3></a>
+            </div>
+            <div id="s04">
+                <a href=""><h3>Audemars Piguet</h3></a>
+            </div>
+            <div id="s05">
+                <a href="E:\projectshtml\e-com\Cartier.html"><h3>Cartier</h3></a>
+            </div>
+            <div id="s06">
+                <a href="E:\projectshtml\e-com\Jaeger‑LeCoultre.html"><h3>Jaeger‑LeCoultre</h3></a>
+            </div>
+            <div id="s07">
+                <a href="E:\projectshtml\e-com\Patek Philippe.html"><h3>Patek Philippe</h3></a>
+            </div>
+            <div id="s08">
+                <a href=""><h3>Vacheron Constantin</h3></a>
+            </div>
+            <div id="s09">
+                <a href=""><h3>TAG Heuer</h3></a>
+            </div>
+            <div id="s10">
+                <a href=""><h3>Seiko</h3></a>
+            </div>
+        </div>
+
+  <footer>
+<div id="ftdetl">
+    <p><strong>Rolex watches</strong>
+        New watches 2024
+        Find your Rolex<br>
+        Configure your Rolex
+        Men's watches
+        Women's watches
+        Gold watches</p>
+        <p><strong>Rolex and sports</strong>
+            Tennis
+            Golf
+            Yachting
+            Motor sport
+            Equestrianism</p>
+            <p><strong>
+                Frequently asked questions</strong>
+                Your favourites
+                File a report
+                Newsroom</p>
+     <ul>
+            <strong>Follow US</strong>
+            <li><a href="https://www.instagram.com/atony_bliss/"><i class="fa-brands fa-square-instagram"></i> Insta</a></li>
+            <li><a href="https://www.facebook.com/login/device-based/regular/login/?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f"></i> FaceBook</a></li>
+            <li><a href="https://discord.com/login"><i class="fa-brands fa-discord"></i>Discord</a></li>
+            <li><a href="https://x.com/i/flow/login?lang=en"> <i class="fa-brands fa-twitter"></i>Twitter</a></li>
+        </ul></div>
+
+    <div id="float">
+        <p><strong>Rolex watches</strong>
+            New watches 2024
+            Find your Rolex<br>
+            Configure your Rolex
+            Men's watches
+            Women's watches
+            Gold watches</p>
+            <p><strong>Rolex and sports</strong>
+                Tennis
+                Golf
+                Yachting
+                Motor sport
+                Equestrianism</p>
+                <p><strong>
+                    Frequently asked questions</strong>
+                    Your favourites
+                    File a report
+                    Newsroom</p>
+         <ul>
+                <strong>Follow US</strong>
+                <li><a href="https://www.instagram.com/atony_bliss/"><i class="fa-brands fa-square-instagram"></i> Insta</a></li>
+                <li><a href="https://www.facebook.com/login/device-based/regular/login/?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f"></i> FaceBook</a></li>
+                <li><a href="https://discord.com/login"><i class="fa-brands fa-discord"></i>Discord</a></li>
+                <li><a href="https://x.com/i/flow/login?lang=en"> <i class="fa-brands fa-twitter"></i>Twitter</a></li>
+            </ul></div> 
+    </div>
+  </footer>
+</body>
+</html>
+

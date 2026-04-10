@@ -1,0 +1,429 @@
+body{
+    position: absolute;
+    /* rgba(4, 35, 36, 1) */
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    padding:10px;
+    margin: 0%;
+}
+button{
+    margin-top: 0;
+    color: aliceblue;
+    height: 50px;
+    width: 90px;
+    background-color: black;
+    border-radius: 10px;
+    border-style: none;
+}
+button:hover{
+    background-color:rgba(178, 118, 21, 0.893) ;
+}
+#logo{
+    margin-top: 30px;
+    margin-left: 110px;
+    height:100px;
+    width: 20%;
+}
+nav{
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    display: flex;
+    height: 60px;
+    width: 70%;
+}
+nav ul{
+    position:fixed;
+    display: flex;
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+nav ul li{
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-left: 50px;
+    color: aliceblue;
+    list-style-type: none;
+    color: aliceblue;
+    justify-content: space-between;
+}
+nav ul li a {
+    color: aliceblue;
+    padding: 10px;
+    text-decoration: none; /* Ensure no underline on links */
+    transition: background-color 0.3s ease, color 0.3s ease, cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+nav ul li a:hover{
+    background-color: rgba(178, 118, 21, 0.893);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    transform: scale(1.10); /* Slightly larger on hover for effect */
+}
+
+nav ul li a button i{
+    height: 70px;
+    width: 70px;
+}
+nav ul.scrolled{
+    background-color:rgb(182, 128, 29);
+    margin-left: 0%;
+    height: 100px;
+    width: 50%;
+    border-radius: 10px;
+}
+footer{
+    display: flex;
+    padding: 30px;
+    background-color: rgb(182, 128, 29); 
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li{
+    color: aliceblue;
+    list-style-type: none;
+}
+footer ul li a {
+    color: aliceblue;
+    text-decoration: none; 
+}
+footer ul strong{
+    color: aliceblue;
+}
+#float{
+    margin-top: 10px;
+    margin-left: 500px;
+}
+#brands {
+    margin-top: 80px;
+    display: grid; /* Ensure grid layout is applied */
+    padding: 40px;
+    grid-gap: 20px; /* Add gap between grid items */
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    width: 80%;
+    margin: auto; /* Center align the container */
+}
+
+#brands div {
+    color:  rgb(255, 255, 255);
+    margin-left: 50px;
+    height: 330px;
+    width: 300px;  
+    justify-content:space-between ;
+    background-color: rgba(64, 91, 92, 0.491);
+    border-radius: 5px;
+    border: none; /* Simplified border styling */
+    box-shadow: 2px 2px 2px 1px rgba(239, 176, 58, 0.447); 
+    font-size: 25px;
+    display: flex; /* Flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding inside the div */
+    transition: transform 0.3s;
+}
+#brands div:hover{
+ transform: scale(1.1); }
+#s01 {
+    background-image: url("E:/projectshtml/e-com/rolex.png" );
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+#s01 a{ text-decoration: none;color: aliceblue;}
+#s02{background-image: url("E:/projectshtml/e-com/Breitling.png" );
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; }
+#s02 a{ text-decoration: none;color: aliceblue;}
+#s03{background-image: url("E:/projectshtml/e-com/OMEGA.png" );
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; }
+#s03 a{ text-decoration: none;color: aliceblue;}
+#s04{background-image: url("E:/projectshtml/e-com/Audemars Piguet.png" );
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; }
+#s04 a{ text-decoration: none;color: aliceblue;}
+#s05{background-image: url("E:/projectshtml/e-com/Cartier.png" );
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; }
+#s05 a{ text-decoration: none;color: aliceblue;}
+#s06{background-image: url("E:/projectshtml/e-com/jaeger-lecoultre.jpg");
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; }
+#s06 a{ text-decoration: none;color: aliceblue;}
+#s07{background-image: url("E:/projectshtml/e-com/Patek Philippe.png" );
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; }
+#s07 a{ text-decoration: none;color: aliceblue;}
+#s08{background-image: url("E:/projectshtml/e-com/VacheronConstantin.png" );
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; }
+#s08 a{ text-decoration: none;color: aliceblue;}
+#s09{background-image: url("E:/projectshtml/e-com/TAGHeuer.png" );
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; }
+#s09 a{ text-decoration: none;color: aliceblue;}
+#s10{background-image: url("E:/projectshtml/e-com/Seiko.jpg" );
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; }
+#s10 a{ text-decoration: none;color: aliceblue;}
+#info video{
+  border-radius: 5px;
+  height: 45%;
+  width:100%;  
+  mix-blend-mode: screen;
+}
+h1{
+    margin-top: 40px; 
+    margin-left: 300px; 
+    color: aliceblue; 
+    text-shadow: 3px 3px 8px  rgb(152, 109, 30); 
+    font-size: 80px;
+    animation: faidIn 3.5s ;
+}
+@keyframes faidIn {
+    from { 
+        transform: translateY(-50px); 
+        opacity: 0; } 
+    to { 
+        transform: translateY(0); 
+        opacity: 1; } 
+}
+h2{
+    margin-top: 60px; 
+    margin-left: 400px; 
+    color: aliceblue; 
+    text-shadow: 3px 3px 8px  rgb(152, 109, 30); 
+    font-size: 80px;
+    animation: faidIn 3.5s infinite ;
+}
+@keyframes faidIn {
+    from { 
+        transform: translateY(-50px); 
+        opacity: 0; } 
+    to { 
+        transform: translateY(0); 
+        opacity: 1; } 
+}
+h3{
+    transition: transform 0.3s;
+}
+h3:hover{
+    transform: scale(2);
+}
+/* sesrch engin */
+.search-engin{
+    margin-top: 0%;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.search-engin input{
+    height: 35px;
+    width: 35%;
+    margin-left: 200px;
+    border-radius: 30px;
+    border-style: none;
+}
+.search-engin input:hover{
+    background-color: rgba(0, 0, 0, 0.011);
+    color: aliceblue;
+    font-size: 19px;
+}
+.search-engin button i{
+    border-radius: 15px;
+    width: 80px;
+}
+/* omega css */
+#maincontainer{
+    padding:0%;
+    height: 100%;
+    width:100%;
+}
+#maincontainer div{
+    height: auto;
+    width: 100%; 
+    color:  rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none; /* Simplified border styling */
+    font-size: 25px;
+    padding: 20px; /* Add padding inside the div */
+}
+#rj01{
+    display: flex;
+}
+#rj01 #contfr{
+    margin-top: 200px;
+}
+#rj01 #contfr h2{
+    margin-left: 0px;
+    color:rgb(152, 109, 30) ;
+    font-size: 30px;
+    display:inline;
+    animation: none;
+    text-shadow: none;
+    }
+#rj01 #contfr h3{
+    font-size: 30px;
+    display:inline;
+    animation: none;
+}
+#rj01 img{
+margin-left: 100px; 
+}
+/* rj01 */
+#rj02{
+    display: flex;
+}
+#rj02 #contfr{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+#rj02 #contfr h2{
+    margin-left: 0px;
+    color:rgb(152, 109, 30) ;
+    font-size: 30px;
+    display:inline;
+    animation: none;
+    text-shadow: none;
+    }
+#rj02 #contfr h3{
+    font-size: 30px;
+    display:inline;
+    animation: none;
+}
+#rj02 img{
+    height: 500px;
+    width: 500px;
+    }
+    /* rj02 */
+#rj03{
+    display: flex;
+}
+#rj03 #contfr{
+    margin-right: 15px;
+    margin-top: 50px;
+}
+#rj03 #contfr h2{
+    margin-left: 0px;
+    color:rgb(152, 109, 30) ;
+    font-size: 30px;
+    display:inline;
+    animation: none;
+    text-shadow: none;
+    }
+#rj03 #contfr h3{
+    font-size: 30px;
+    display:inline;
+    animation: none;
+}
+#rj03 img{
+height: 400px;
+width: 600px;
+margin-left: 100px;
+}
+/* rj03 */
+#rj04{
+    display: flex;
+}
+#rj04 #contfr{
+    margin-top: 50px;
+    margin-left:100px;
+    width: 100%;
+}
+#rj04 #contfr h2{
+    margin-left: 0px;
+    color:rgb(152, 109, 30) ;
+    font-size: 30px;
+    display:contents;
+    animation: none;
+    text-shadow: none;
+    }
+#rj04 #contfr h3{
+    font-size: 30px;
+    display:inline;
+    animation: none;
+}
+#rj04 img{ 
+height: 600px;
+width: 600px;
+float: right; 
+margin-left: 550px;
+}
+/* rj04 */
+#rj05{
+    display: flex;
+}
+#rj05 #contfr{
+    margin-right: 15px;
+    margin-top: 50px;
+}
+#rj05 #contfr h2{
+    margin-left: 0px;
+    color:rgb(152, 109, 30) ;
+    font-size: 30px;
+    display:inline;
+    animation: none;
+    text-shadow: none;
+    }
+#rj05 #contfr h3{
+    font-size: 30px;
+    display:inline;
+    animation: none;
+}
+#rj05 img{
+height: 400px;
+width: 600px;
+margin-left: 100px;
+}
+#wdtl{
+    height: 50px;
+    background-color: rgba(240, 248, 255, 0.447);
+    color:aliceblue;
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+    animation: slidInOut 2.5s infinite;
+}
+@keyframes slidInOut{
+    0%{ transform: translateX(-100);}
+    25%{ transform: translateX(0);}
+    75% { transform: translateX(0); } 
+    100% { transform: translateX(100%);}
+}
